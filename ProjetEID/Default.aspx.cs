@@ -26,4 +26,6 @@ public partial class _Default : System.Web.UI.Page
             Response.Write("<script>alert('Non Authorized')</script>");
         con.Close();
     }
+    protected void test()
+    { }
 }
