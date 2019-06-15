@@ -20,16 +20,13 @@ public partial class Default2 : System.Web.UI.Page
         con.Open();
         foreach (GridViewRow item in GridView1.Rows)
         {
-            SqlCommand cmd = new SqlCommand("delete from personelle where cin ='"+item.Cells[0].Text+"'", con);
-            cmd.ExecuteNonQuery();
+            if ((item.Cells[0].FindControl("cbSelect") as CheckBox).Checked)
+            {
+                SqlCommand cmd = new SqlCommand("delete from personelle where CIN = " + item.Cells[1].Text, con);
+                cmd.ExecuteNonQuery();
+            }
         }
+        GridView1.DataBind();
         con.Close();
-    }
-
-    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        switch (((Button)sender).Text)
-        {
-        }
     }
 }
