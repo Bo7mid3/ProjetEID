@@ -24,7 +24,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <asp:Button ID="submit" runat="server" Text="Soumettre" OnClick="Submit_Form" />
+                        <asp:Button ID="submit" runat="server" Text="Soumettre" OnClick="Submit_Click" />
                     </td>
                 </tr>
             </table>

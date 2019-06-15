@@ -15,7 +15,7 @@ public partial class _Default : System.Web.UI.Page
 
     }
 
-    protected void Submit_Form (object sender, EventArgs e)
+    protected void Submit_Click (object sender, EventArgs e)
     {
         con.Open();
         SqlCommand cmd = new SqlCommand("select * from users where userid = '"+userid.Text+"' and password = '"+password.Text+"'",con);

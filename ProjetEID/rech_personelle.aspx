@@ -23,7 +23,7 @@
                 </Columns>
             </asp:GridView>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [personelle]"></asp:SqlDataSource>
-            <asp:Button ID="supprimer" runat="server" Text="Supprimer" OnClick="Click_Button" />
+            <asp:Button ID="supprimer" runat="server" Text="Supprimer" OnClick="Submit_Click" />
         </div>
     </form>
 </body>

@@ -11,27 +11,27 @@
         <div>
             <table>
                 <tr>
-                    <td>cin</td>
+                    <td>CIN</td>
                     <td>
                         <asp:TextBox ID="cin" runat="server"></asp:TextBox></td>
                 </tr>
                 <tr>
-                    <td>nom</td>
+                    <td>Nom</td>
                     <td>
                         <asp:TextBox ID="nom" runat="server"></asp:TextBox></td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">prenom</td>
+                    <td class="auto-style1">Prenom</td>
                     <td class="auto-style1">
                         <asp:TextBox ID="prenom" runat="server"></asp:TextBox></td>
                 </tr>
                 <tr>
-                    <td>specialite</td>
+                    <td>Specialite</td>
                     <td>
                         <asp:TextBox ID="specialite" runat="server"></asp:TextBox></td>
                 </tr>
             </table>
-            <asp:Button ID="submit" runat="server" Text="soumettre" OnClick="Submit_Click" />
+            <asp:Button ID="submit" runat="server" Text="Soumettre" OnClick="Submit_Click" />
         </div>
     </form>
 </body>

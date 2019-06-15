@@ -15,7 +15,7 @@ public partial class Default2 : System.Web.UI.Page
 
     }
 
-    protected void Click_Button(object sender, EventArgs e)
+    protected void Submit_Click(object sender, EventArgs e)
     {
         con.Open();
         foreach (GridViewRow item in GridView1.Rows)
