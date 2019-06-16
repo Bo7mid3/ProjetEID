@@ -24,7 +24,7 @@ public partial class Default2 : System.Web.UI.Page
         {
             if ((item.Cells[0].FindControl("cbSelect") as CheckBox).Checked)
             {
-                SqlCommand cmd = new SqlCommand("delete from personelle where CIN = " + item.Cells[1].Text, con);
+                SqlCommand cmd = new SqlCommand("delete from personelle where CIN = " + item.Cells[2].Text, con);
                 cmd.ExecuteNonQuery();
             }
         }
