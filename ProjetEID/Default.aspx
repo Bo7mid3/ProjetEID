@@ -23,7 +23,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" style="text-align: center">
                         <asp:Button ID="submit" runat="server" Text="Soumettre" OnClick="Submit_Click" />
                     </td>
                 </tr>
